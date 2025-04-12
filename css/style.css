@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url('imagens/fundo.svg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    font-family: "Figtree";
+    overflow: hidden;
+  }
+  
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+  }
+  
+  .card {
+    background-color: #414040;
+    margin-bottom: 80px;
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 10px 8px 0px #2A2929;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+
+  .titulo {
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+  }
+  
+  .linha {
+    height: 3px;
+    background-color: #4d75b0; 
+    width: 80%;
+    margin: 10px auto 20px auto;
+    border: none;
+  }
+  
+  label {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+  }
+
+  input:focus {
+    outline: none; 
+    transform: scale(1.03);
+    box-shadow: 8px 8px 0px #2A2929; 
+  }
+
+  .botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+
+  button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: "Figtree"
+  }
+  
+  button:hover {
+    background-color: #4d75b0; 
+  }
+
+  button:active {
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .resultado {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    font-family: "Figtree"
+  }
+
+  .resultado.mostrar {
+    opacity: 1;
+  }
+
+  .creditos {
+    color: #4d75b0;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    opacity: 0.8;
+  }
+
+  @media (max-width: 450px) {
+    .card {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .titulo {
+      font-size: 28px;
+    }
+  
+    label, .resultado {
+      font-size: 16px;
+    }
+  }

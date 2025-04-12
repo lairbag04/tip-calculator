@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <section class="card">
+
+      <header>
+        <h1 class="titulo">Tip Calculator</h1>
+        <hr class="linha"> 
+      </header>
+
+
+      <form class="formulario">
+
+        <label for="valor">Valor Total (R$):</label>
+        <input type="number" id="valor" placeholder="Ex: 100">
+
+        <label for="porcentagem">Porcentagem da Gorjeta (%):</label>
+        <input type="number" id="porcentagem" placeholder="Ex: 10">
+
+
+        <div class="botoes">
+          <button type="button" onclick="calcularGorjeta()">Calcular</button> 
+          <button type="button" onclick="limpar()">Limpar</button> 
+        </div>
+
+      </form>
+
+      <footer style="display: none;" class="resultado" id="resultado">
+        <p> </p> 
+      </footer>
+
+      <div class="creditos">Coded by Gabriel Gomes</div>
+    </section>
+
+  </main>
+
+  <script src="js/script.js" defer></script>
+
+</body>
+</html>
